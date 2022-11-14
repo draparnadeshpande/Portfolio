@@ -7,7 +7,7 @@ function DisplayBio(bio) {
     var citations = document.getElementById('biocitations');
     var teaching = document.getElementById('bioteaching');
     var scienceed = document.getElementById('bioscienceed');
-
+    var atom = document.getElementById('atom');
 
     long.style.display = 'none';
     short.style.display = 'none';
@@ -17,6 +17,7 @@ function DisplayBio(bio) {
     citations.style.display = 'none';
     teaching.style.display = 'none';
     scienceed.style.display ='none';
+    atom.style.display ='none';
 
     switch(bio)
     {
@@ -58,3 +59,4 @@ function ToggleMode() {
     var element = document.body;
     element.classList.toggle("dark-mode");
  }
+

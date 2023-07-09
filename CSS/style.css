@@ -171,6 +171,11 @@ li{
     font-style: italic;
 }
 
+/* Sciecne ED */
+.scienceed-container{
+    padding-left:40px
+}
+
 
 /* Footer Quote  */
 .footer-content{

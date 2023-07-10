@@ -134,7 +134,9 @@ button:hover {
     background: rgba(150, 151, 156, 0.1);
     cursor: pointer;
     border-color:orange;
-    font-size: 1.03rem;
+    /* font-size: 1.03rem; */
+    color:#000;
+    text-decoration:overline;
 }
 
 /* CSS for Long and short bio */

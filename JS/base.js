@@ -7,6 +7,7 @@ function DisplayBio(bio) {
     var citations = document.getElementById('biocitations');
     var teaching = document.getElementById('bioteaching');
     var scienceed = document.getElementById('bioscienceed');
+    var news = document.getElementById('bionews');
     var atom = document.getElementById('atom');
 
     long.style.display = 'none';
@@ -18,6 +19,7 @@ function DisplayBio(bio) {
     teaching.style.display = 'none';
     scienceed.style.display ='none';
     atom.style.display ='none';
+    news.style.display='none';
 
     switch(bio)
     {
@@ -52,6 +54,10 @@ function DisplayBio(bio) {
         case 'scienceed':
             scienceed.style.display = 'block';
         break;
+
+        case 'news':
+            news.style.display = 'block';
+        break;
     }
 }
 
@@ -59,4 +65,3 @@ function ToggleMode() {
     var element = document.body;
     element.classList.toggle("dark-mode");
  }
-

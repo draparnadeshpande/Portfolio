@@ -25,40 +25,66 @@ function DisplayBio(bio) {
     {
         case 'long':
             long.style.display = 'block';
+            HighlightSelectedButton("long");
             break;
 
         case 'short':
             short.style.display = 'block';
+            HighlightSelectedButton("short");
             break;
 
         case 'research':
             research.style.display = 'block';
+            HighlightSelectedButton("research");
             break;
 
         case 'outreach':
             outreach.style.display = 'block';
+            HighlightSelectedButton("outreach");
             break;
 
         case 'group':
             group.style.display = 'block';
+            HighlightSelectedButton("group");
             break;
 
         case 'citations':
             citations.style.display = 'block';
+            HighlightSelectedButton("citations");
             break;
             
         case 'teaching':
             teaching.style.display = 'block';
+            HighlightSelectedButton("teaching");
         break;
 
         case 'scienceed':
             scienceed.style.display = 'block';
+            HighlightSelectedButton("scienceed");
         break;
 
         case 'news':
             news.style.display = 'block';
+            HighlightSelectedButton("news");
         break;
     }
+}
+
+
+function HighlightSelectedButton(button) {
+    var buttons = document.getElementsByClassName('button-item');
+
+    for (var i = 0, max = buttons.length; i < max; i++){
+        buttons[i].style.background= "#fff";
+        buttons[i].style.color="#96979c";
+        buttons[i].style.borderColor="#96979c";
+        buttons[i].style.textDecoration="none";
+    }
+    var HButton = document.getElementById(button);
+    HButton.style.background= "#96979c";
+    HButton.style.borderColor="orange";
+    HButton.style.color="#000";
+    HButton.style.textDecoration="overline";
 }
 
 function ToggleMode() {

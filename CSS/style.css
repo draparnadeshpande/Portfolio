@@ -157,10 +157,6 @@ button:hover {
     text-decoration-thickness: 3px;
 }
 
-/* Group Info */
-.current-members{
-}
-
 
 /* Mode Toggle Switch */
 .dark-mode-toggler {
@@ -178,6 +174,9 @@ li{
     padding-left:40px
 }
 
+.news-title{
+    font-size: 30px;
+}
 
 /* Footer Quote  */
 .footer-content{
